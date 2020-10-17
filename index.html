@@ -2,36 +2,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
     <title>Kiran More | Web developer based out of Mumbai</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>    
-        <div class="logo">
-            <img src="img/kiran-more.png" alt="">
+    <header id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="logo">
+              <h3><a href="index.html">this.kiran()</a></h2>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#services" data-after="Service">Services</a></li>
+                <li><a href="#about" data-after="About">About</a></li>
+                <li><a href="#work" data-after="Projects">Projects</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
+      </header>
     <!-- Intro -->
     <section class="intro" id="home">
         <h1 class="section-title section-title-intro">
@@ -42,29 +49,29 @@
     </section>
 
     <!-- my services -->
-    <section class="my-services" id="service">
+    <section class="my-services" id="services">
         <h2 class="section-title section-title-services">What I do</h2>
         <div class="services">
             <!-- service box -->
             <div class="service">
                 <h3>Web Design + Development</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis odio dolores magni excepturi corrupti porro asperiores deleniti officiis, in dicta modi ut laborum! Reiciendis soluta quidem repudiandae quisquam obcaecati neque.</p>
+                <p>Responsive websites built for an optimal user experience that achieves your business goals.</p>
             </div>
             
             <!-- service box -->
             <div class="service">
-                <h3>Wordpress</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur optio nisi, ducimus, quibusdam reprehenderit enim eveniet voluptatum hic in dolore soluta expedita iusto ut iste blanditiis voluptas quos molestias possimus.</p>
+                <h3>Wordpress CMS</h3>
+                <p>Manage your website using the web's most popular content management system.</p>
             </div>
             
             <!-- service box -->
             <div class="service">
-                <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem accusamus eligendi molestiae provident omnis quas. Consectetur nemo tempora autem perferendis quis laboriosam maiores nulla, perspiciatis non eligendi fugit quos recusandae?</p>
+                <h3>Performance & Basic SEO</h3>
+                <p>Make your website fast, easy to find, and reach the widest audience possible.</p>
             </div>
         </div>
 
-        <a href="" class="btn" id="work">My Work</a>
+        <a href="" class="btn">My Work</a>
     </section>
 
     <!-- about me -->
@@ -73,8 +80,10 @@
         <p class="section-subtitle section-subtitle-about">Web Designer and Developer based out of Mumbai</p>
 
         <div class="about-me-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis nihil, accusantium at explicabo repudiandae facere odio consequatur mollitia adipisci est praesentium corrupti officia nesciunt, velit ad! Nostrum, sed obcaecati.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quam, quibusdam ad aliquam quia hic reprehenderit earum adipisci voluptas alias delectus harum laboriosam, esse quaerat debitis. Architecto accusantium numquam obcaecati!</p>
+            <p>Hi. I’m <strong>Kiran</strong>, a  <strong>Front-end Developer</strong> with 4 +  years commercial experience creating successful websites. I use HTML5, CSS3 , and JavaScript to produce responsive websites and web apps that are fast, easy to use, and built with best practices and  provide users the best and most appropriate experience suited to their device and browser.
+            </p>
+            <p>As a <strong>wordpress developer</strong> focused on customer satisfaction, I manage all aspects of web development from concept to requirements definition, design, development, launch, maintenance and user support. I enjoy the client-facing role and working closely with team members to produce high-quality deliverables.</p>
+            <img src="img/signature-animated.gif" alt="">
         </div>
 
         <img src="img/kiran-02.jpg" alt="a picture of kiran while travelling in Manali" class="about-me-img">
@@ -87,69 +96,105 @@
         <div class="portfolio">
             
             <!-- portfolio item 1 -->
-            <a href="img/yellowjacket.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/yellowjacket.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="yellowjacket.in">
                 <img src="img/yellowjacket.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 2 -->
-            <a href="img/bpni-maharashtra.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/bpni-maharashtra.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="bpnimaharashtra.org">
                 <img src="img/bpni-maharashtra.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 3 -->
-            <a href="img/scubareels.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/scubareels.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="scubareels.com">
                 <img src="img/scubareels.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 4 -->
-            <a href="img/m-cube.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/m-cube.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="mcubeprojects.com">
                 <img src="img/m-cube.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 5 -->
-            <a href="img/studiolink.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/studiolink.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="studiolink.in">
                 <img src="img/studiolink.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 6 -->
-            <a href="img/arrowgreentech.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/arrowgreentech.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="arrowgreentech.com">
                 <img src="img/arrowgreentech.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 7 -->
-            <a href="img/ayurvedicherbs-oils.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/ayurvedicherbs-oils.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="ayurvedicherbs-oils.in">
                 <img src="img/ayurvedicherbs-oils.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 8 -->
-            <a href="img/rangmandir.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/rangmandir.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="rangmandir.in">
                 <img src="img/rangmandir.jpg" class="portfolio-img">
             </a>
             
             <!-- portfolio item 9 -->
-            <a href="img/watersolublefilm.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="Caption #1">
+            <a href="img/watersolublefilm.jpg" class="portfolio-item" data-fancybox="gallery" data-caption="watersolublefilm.com">
                 <img src="img/watersolublefilm.jpg" class="portfolio-img">
             </a>
 
         </div>
     </section>
 
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    
+      <h2 class="section-title section-title-contact">Let's Connect</h2>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h3>Phone</h3>
+            <h4>+91 843 355 2572</h4>
+            <h4>+91 976 816 7733</h4>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <h4><a href="mailto:kiran11more@gmail.com">kiran11more@gmail.com</a></h4>
+            <h4><a href="mailto:kiran11more@live.com">kiran11more@live.com</a></h4>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h3>Location</h3>
+            <h4>Mumbai, Maharashtra</h4>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End Contact Section -->
+
     <!-- footer -->
     <footer class="footer">
-        <a href="mailto:kiran11more@gmail.com" class="footer-link">kiran11more@gmail.com</a>
         <ul class="social-list">
-            <li class="social-list-item"><a href="" class="social-list-link"><i class="fab fa-facebook"></i></a></li>
-            <li class="social-list-item"><a href="" class="social-list-link"><i class="fab fa-twitter"></i></a></li>
-            <li class="social-list-item"><a href="" class="social-list-link"><i class="fab fa-codepen"></i></a></li>
-            <li class="social-list-item"><a href="" class="social-list-link"><i class="fab fa-github"></i></a></li>
+            <li class="social-list-item"><a target="_blank" href="https://facebook.com/kiran11more" class="social-list-link" title="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li class="social-list-item"><a target="_blank" href="https://twitter.com/kiran11more" class="social-list-link"  title="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-list-item"><a target="_blank" href="https://codepen.io/kiran11more" class="social-list-link" title="codepen"><i class="fab fa-codepen"></i></a></li>
+            <li class="social-list-item"><a target="_blank" href="https://github.com/kiran11more" class="social-list-link" title="github"><i class="fab fa-github"></i></a></li>
         </ul>
-
+        <p class="copyrights">&copy;2020 Kiran More | Always in Ββ | Handcrafted with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></p>
     </footer>
+
 
     <button onclick="topFunction()" id="backtotop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
-    <script src="js/script.js"></script>    
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>   
+
 </body>
 </html>
