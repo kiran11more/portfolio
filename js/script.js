@@ -28,7 +28,7 @@ menu_item.forEach((item) => {
 $(window).scroll(function(){
 	var scroll = $(window).scrollTop();
 	if (scroll > 300 && $(window).width() <= 480) {
-	  $(".nav-bar").css("background" , "rgb(238 238 238 / 60%)");
+	  $(".nav-bar").css("background" , "#fff");
 	}
 
 	else{
