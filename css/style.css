@@ -85,6 +85,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    margin-top: 2rem;
 }
 
 .btn:hover {
@@ -321,7 +322,7 @@ h3 { font-size: var(--fs-h3) }
     position: relative;
 }
 
-.section-title-services::after {
+/* .section-title-services::after {
     content: '';
     display: block;
     width: 2em;
@@ -329,17 +330,18 @@ h3 { font-size: var(--fs-h3) }
     margin: 0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.5;
-}
+} */
 
 .service {
     flex: 1 0 0px;
+    margin-top: 2rem;
 }
 
 @media (min-width: 800px) {
     .services {
         display: flex;
         max-width: 1000px;
-        margin: 2em auto;
+        margin: 0 auto;
     }
     .service + .service {
         margin-left: 2em;
