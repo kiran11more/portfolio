@@ -25,16 +25,16 @@ menu_item.forEach((item) => {
 });
 
 // on scroll navbar background
-// $(window).scroll(function(){
-// 	var scroll = $(window).scrollTop();
-// 	if (scroll > 300) {
-// 	  $(".nav-bar").css("background" , "#eee");
-// 	}
+$(window).scroll(function(){
+	var scroll = $(window).scrollTop();
+	if (scroll > 300 && $(window).width() <= 480) {
+	  $(".nav-bar").css("background" , "rgb(238 238 238 / 60%)");
+	}
 
-// 	else{
-// 		$(".nav-bar").css("background" , "#fff");  	
-// 	}
-// })
+	else{
+		$(".nav-bar").css("background" , "none");  	
+	}
+})
 
 // back to top button
 

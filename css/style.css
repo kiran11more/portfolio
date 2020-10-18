@@ -388,6 +388,15 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
+@media (max-width: 600px) {
+    .logo h3 {
+        font-size: 1.4rem;
+    }
+    .nav-bar {
+        padding: 0.5rem 2rem;
+    }
+} 
+
 /* my work section */
 
 .my-work {
