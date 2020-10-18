@@ -267,7 +267,7 @@ h3 { font-size: var(--fs-h3) }
 
 .intro {
     position: relative;
-    padding: 10rem 0 5rem;
+    padding: 10rem 2rem 5rem;
 }
 
 .intro-img {
