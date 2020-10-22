@@ -395,6 +395,9 @@ h3 { font-size: var(--fs-h3) }
     .nav-bar {
         padding: 0.5rem;
     }
+    .about-me-img {
+        margin-top: 2rem;
+    }
 } 
 
 /* my work section */
@@ -499,14 +502,17 @@ h3 { font-size: var(--fs-h3) }
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 2.5em 2rem;
     font-size: var(--fs-h3);
 }
 
 .footer a {
-    color: inherit;
+    color: var(--clr-light);
     text-decoration: none;
 
+}
+.footer a:hover {
+    opacity: 0.6;
 }
 
 .footer-link {
