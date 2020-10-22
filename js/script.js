@@ -27,7 +27,7 @@ menu_item.forEach((item) => {
 // on scroll navbar background
 $(window).scroll(function(){
 	var scroll = $(window).scrollTop();
-	if (scroll > 300 && $(window).width() <= 480) {
+	if (scroll > 200 && $(window).width() <= 480) {
 	  $(".nav-bar").css("background" , "#fff");
 	}
 
